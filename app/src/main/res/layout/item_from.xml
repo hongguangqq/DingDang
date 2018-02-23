@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zdlw.demo.dingdang.ui.view.CircleImageView
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/iv_from"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/tou"
+        app:border_color="@color/bg_window"/>
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_toRightOf="@id/iv_from"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="12"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@mipmap/chat_from"/>
+</RelativeLayout>

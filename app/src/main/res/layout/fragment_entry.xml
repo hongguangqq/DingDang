@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/sky">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <com.zdlw.demo.dingdang.ui.view.CircleImageView
+            android:id="@+id/civ_entry_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tou"
+            app:border_color="@color/white"/>
+        <TextView
+            android:id="@+id/tv_entry_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/civ_entry_head"
+            android:text="用户名称"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_entry_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="11dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/civ_entry_head"
+            android:text="2017/12/12 19:00"/>
+        <TextView
+            android:id="@+id/tv_entry_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="薪酬: 50"/>
+    </RelativeLayout>
+    <include layout="@layout/line"/>
+
+    <TextView
+        android:id="@+id/tv_entry_msg"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:padding="6dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/bg_ban"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_entrt_reserve"
+        android:layout_marginTop="10dp"
+        android:text="预定"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_able"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

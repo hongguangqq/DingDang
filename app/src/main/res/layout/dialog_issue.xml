@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:showDividers="middle">
+
+    <EditText
+        android:id="@+id/et_dialog_money"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:hint="--金额--"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:lines="1"
+        android:background="@null"/>
+    <include layout="@layout/line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+        <Button
+            android:id="@+id/btn_dialog_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btn"/>
+        <View
+            android:layout_height="30dp"
+            android:layout_width="10dp"/>
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btn"/>
+    </LinearLayout>
+</LinearLayout>

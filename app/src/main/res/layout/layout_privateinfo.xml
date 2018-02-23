@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <include layout="@layout/line"/>
+    <com.zdlw.demo.dingdang.ui.view.SettingItemView
+        android:id="@+id/st_pinfo_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="修改密码"
+        android:visibility="gone"
+        app:rightText="">
+    </com.zdlw.demo.dingdang.ui.view.SettingItemView>
+    <include layout="@layout/line"/>
+    <com.zdlw.demo.dingdang.ui.view.SettingItemView
+        android:id="@+id/st_pinfo_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="学校"
+        app:rightText="">
+    </com.zdlw.demo.dingdang.ui.view.SettingItemView>
+    <com.zdlw.demo.dingdang.ui.view.SettingItemView
+        android:id="@+id/st_pinfo_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="专业"
+        app:rightText="">
+    </com.zdlw.demo.dingdang.ui.view.SettingItemView>
+    <com.zdlw.demo.dingdang.ui.view.SettingItemView
+        android:id="@+id/st_pinfo_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="年级"
+        app:rightText="">
+    </com.zdlw.demo.dingdang.ui.view.SettingItemView>
+    <com.zdlw.demo.dingdang.ui.view.SettingItemView
+        android:id="@+id/st_pinfo_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="手机号"
+        app:rightText="">
+    </com.zdlw.demo.dingdang.ui.view.SettingItemView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/tv_pinfo_introduction"
+            android:gravity="left|top"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="请输入您的自我介绍"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"/>
+    </FrameLayout>
+
+</LinearLayout>

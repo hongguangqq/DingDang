@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:padding="10dp">
+    <com.zdlw.demo.dingdang.ui.view.CircleImageView
+        android:id="@+id/civ_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/tou"
+        app:border_color="@color/white"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="你好"
+        android:textSize="14dp"
+        android:textColor="@color/black"/>
+</LinearLayout>

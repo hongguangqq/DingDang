@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DingDang</string>
+    <string-array name="tab_name">
+        <item>小学</item>
+        <item>初中</item>
+        <item>高中</item>
+    </string-array>
+    <string name="login_only_can_input">qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890</string>
+    <string-array name="course">
+        <item>语文</item>
+        <item>数学</item>
+        <item>英语</item>
+        <item>物理</item>
+        <item>化学</item>
+        <item>生物</item>
+        <item>历史</item>
+        <item>地理</item>
+        <item>政治</item>
+    </string-array>
+</resources>

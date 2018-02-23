@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/flower_green"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/iv_title_left"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/icon_whiteback"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/tv_title_title"
+        android:layout_centerInParent="true"
+        android:text="我接受的委托"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_title_right"
+        android:visibility="gone"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bg_lr"/>
+    <TextView
+        android:id="@+id/tv_title_text"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:layout_centerVertical="true"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:text="创建"/>
+</RelativeLayout>

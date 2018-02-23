@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    defaultConfig {
+        applicationId "com.zdlw.demo.dingdang"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':sliding_library')
+    compile project(':Indicatorlibrary')
+    compile files('libs/gson-2.3.1.jar')
+    //拉刷新和上拉加载
+    //时间选择器
+    compile files('libs/glide-3.7.0.jar')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.jzxiang.pickerview:TimePickerDialog:0.9.2'
+    compile 'com.contrarywind:Android-PickerView:3.2.6'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/jcore-android_v1.1.0.jar')
+    compile files('libs/jmessage-android-2.0.0.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+}
